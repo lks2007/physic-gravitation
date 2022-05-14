@@ -1,0 +1,110 @@
+*{
+    padding: 0px 0px;
+    margin: 0px 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 20px 20px;
+    background: #f1f1f1;
+    border-radius: 8px;
+    width: 350px;
+    height: 310px;
+    text-align: center;
+    box-shadow: 2px 2px 6px;
+}
+
+.calcul{
+    padding: 8px 24px;
+    font-size: 14px;
+    background: #0f121d;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    transition: background .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.container-input{
+    /* background-color: rgb(184, 185, 185); */
+    font-size: 0px;
+
+}
+
+.object{
+    background-color: #11141d;
+    border: none;
+    padding: 8px 14px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #f1f1f1;
+    outline: none;
+    padding-left: 3px;
+}
+
+label{
+    position: relative;
+    background-color: #11141d;
+    padding: 5.5px;
+    color: #f1f1f1;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    font-size: 17px;
+    top: 1px;
+    padding-left: 10px;
+}
+
+.object::placeholder{
+    color: #f1f1f1;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+h4{
+    font-size: 16px;
+    text-align: left;
+    padding-left: 14%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+body{
+    background-image: url("./assets/background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container-astre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 14%;
+    padding-right: 14%;
+    align-items: center;
+}
+
+.astre{
+    height: 70px;
+    border-radius: 50px;
+    transition: all .1s linear;
+}
+
+p{
+    color: #f1f1f1;
+    position: absolute;
+    transform: translate(-1%, -99%);
+    right: 1%;
+    top: 99%;
+}
