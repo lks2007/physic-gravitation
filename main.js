@@ -75,6 +75,5 @@ $(".calcul").click(function() {
             $(`<style>.rotate:after{top: `+($(".rotate").height()-35)+`px;}</style>`).appendTo("head")
             $(`<style>.rotate:before{top: `+($(".rotate").height()-15)+`px;}</style>`).appendTo("head")
         })
-    }, 05
-    00)
+    }, 0500)
 })
