@@ -5,7 +5,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-form{
+.form{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -107,4 +107,55 @@ p{
     transform: translate(-1%, -99%);
     right: 1%;
     top: 99%;
+}
+
+.loader {
+    border: 16px solid #cecdcd; /* Light grey */
+    border-top: 16px solid #192630; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s cubic-bezier(0.215, 0.610, 0.355, 1) infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+
+.onloader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.left{
+    margin-left: 0px;
+    padding-left: 0px;
+    text-align: center;
+}
+
+.astre-big{
+    width: 90px;
+    height: 90px;
+}
+
+.top{
+    margin-top: 0px;
+}
+
+.bottom{
+    margin-bottom: 0px;
+}
+
+.right{
+    position: absolute;
+    right: 20px;
+    font-size: 25px;
+    color: #162144;
 }

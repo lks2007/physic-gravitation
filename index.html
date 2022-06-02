@@ -8,35 +8,21 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body data-barba="wrapper">
-    <main data-barba="container" data-barba-namespace="home">
-        <form>
-            <h1>Gravitation</h1>
-            <div class="container-input">
-                <label for="name"><i class="fa-solid fa-scale-balanced"></i></label>
-                <input type="text" placeholder="Masse de l'objet (en kg)" name="object" class="object"/>
-            </div>
-            <h4>Choix de l'astre</h4>
-            <div class="container-astre">
-                <img src="./assets/terre.webp" aria-label="0" class="astre">
-                <img src="./assets/lune.png" aria-label="1" class="astre">
-            </div>
-            <input type="submit" value="Calculer" class="calcul">
-        </form>
-        <p>© Soigneux Lukas</p>
-    </main>
-</body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://unpkg.com/@barba/core"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="./app.js"></script>
-<script>
-
-barba.init({
-    schema: {
-      prefix: 'data-custom',
-      wrapper: 'wrap'
-    },
-  });
-</script>
+<body>
+    <div class="form">
+        <h1>Gravitation</h1>
+        <div class="container-input">
+            <label for="name"><i class="fa-solid fa-scale-balanced"></i></label>
+            <input type="text" placeholder="Masse de l'objet (en kg)" name="object" class="object"/>
+        </div>
+        <h4>Choix de l'astre</h4>
+        <div class="container-astre">
+            <img src="./assets/terre.webp" aria-label="0" class="astre">
+            <img src="./assets/lune.png" aria-label="1" class="astre">
+        </div>
+        <input type="submit" value="Calculer" class="calcul">
+    </div>
+    <p>© Soigneux Lukas</p>
+</body><script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="./main.js"></script>
 </html>
