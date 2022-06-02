@@ -55,6 +55,26 @@ $(".calcul").click(function() {
         `);
         $('.right').click(function() {
             $(".form").remove()
+            $("body").append(`
+            <div class="wrap">
+                <h1>Représentation</h1>
+                <img src="./assets/human.svg" class="human">
+                <img src="`+$astre_img+`" class="astre-verybig astre">
+                <div class="echelle">
+                    <h4 class="left">100 N =</h4>
+                    <div class="rotate"></div>
+                </div>
+            </div>
+
+            <div class="fleche"></div>
+            `);
+            $(".fleche").height(Math.round($masse*$g)/5)
+            $(`<style>.fleche:after{top: `+($(".fleche").height()-35)+`px;}</style>`).appendTo("head")
+            $(`<style>.fleche:before{top: `+($(".fleche").height()-15)+`px;}</style>`).appendTo("head")
+            $(".rotate").height(100/5)
+            $(`<style>.rotate:after{top: `+($(".rotate").height()-35)+`px;}</style>`).appendTo("head")
+            $(`<style>.rotate:before{top: `+($(".rotate").height()-15)+`px;}</style>`).appendTo("head")
         })
-    }, 1000)
+    }, 05
+    00)
 })
